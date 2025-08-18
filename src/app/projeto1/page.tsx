@@ -6,6 +6,6 @@ export default function projeto1(){
     
 
     return (
-       <p>oi</p>
+       <p>base</p>
     )
 }

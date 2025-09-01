@@ -1,47 +1,45 @@
 'use client';
 import "./projeto2.css";
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-export default function projeto1(){
-    const [numero, setNumero] = useState(0)
-  
-    function aumentar1(): void {
-      setNumero(numero + 1)
-    }
-  
-    function diminuir1(): void {
-      setNumero(numero - 1)
-    }
-    if (numero >= 11) {
-      setNumero(10)
-      alert("numero máximo alcançado")
-    }
-    if (numero <= -11) {
-      setNumero(-10)
-      alert("numero mínimo alcançado")
+export default function Projeto2() {
+  const [numero, setNumero] = useState(0);
+  const [alerta, setAlerta] = useState(false);
+  const [vendeu, setVendeu] = useState('contador');
+
+  const aumentar = () => {
+    // Até 10, aumenta normalmente
+    if (numero < 10) {
+      setNumero(numero + 1);
+      return;
     }
 
-    useEffect(() => {
-      const fundo = document.getElementById("contador");
-      if (fundo) {
-        if (numero >= 10) {
-          fundo.style.backgroundColor = "green";
-        } else if (numero <= -10) {
-          fundo.style.backgroundColor = "red";
-        } else {
-          fundo.style.backgroundColor = "";
-        }
-      }
-    }, [numero]);
+    // Avisa e pergunta só uma vez
+    if (!alerta) {
+      alert('Número máximo alcançado');
+      const confirmar = confirm('Deseja realmente continuar aumentando o número? Se confirmar, tem que dar uma parte da sua alma pro criador do site cada vez que apertar o botão.');
+      if (!confirmar) return;
+      setAlerta(true);
+    }
 
-    return (
-      <div id="contador">
-        <h1>contador</h1>
-        <p>{numero}</p>
-        <div id="botoes">
-          <button onClick={aumentar1}>+1</button>
-          <button onClick={diminuir1}>-1</button>
-        </div>
+    // Continua aumentando livremente após confirmação
+    const novoNumero = numero + 1;
+    setNumero(novoNumero);
+
+    // Se chegou em 100 ou mais, muda a cor
+    if (novoNumero === 100) {
+      setVendeu('contadormaligno');
+      alert("sua alma agora pertence a mim")
+    }
+  };
+
+  return (
+    <div className={vendeu}>
+      <h1>Contador</h1>
+      <p>{numero}</p>
+      <div id="botoes">
+        <button onClick={aumentar}>+1</button>
       </div>
-    );
+    </div>
+  );
 }

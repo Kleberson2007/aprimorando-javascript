@@ -11,7 +11,6 @@ export default function Home() {
         <div id="projetos">
           <a className="projeto" id="numero1" href={"/projeto1"}>Projeto1</a>
           <a className="projeto" id="numero2" href={"/projeto2"}>Projeto2</a>
-          <a className="projeto" id="numero3" href={"/projeto3"}>Projeto3</a>
           <a className="projeto" id="">...</a>
           <a className="projeto" id="">...</a>
           <a className="projeto" id="">...</a>
@@ -28,6 +27,8 @@ export default function Home() {
           <a className="projeto" id="">...</a>
           <a className="projeto" id="">...</a>
           <a className="projeto" id="">...</a>
+          <a className="projeto" id="">...</a>
+          <a className="projeto" id="numero" href={"/projeto0"}>...</a>
         </div>
       </div>
     </div>

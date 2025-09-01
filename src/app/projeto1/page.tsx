@@ -2,7 +2,7 @@
 import "./projeto1.css";
 import React, { useState, useEffect } from 'react';
 
-export default function projeto1(){
+export default function Projeto1(){
     const [numero, setNumero] = useState(0)
   
     function aumentar1(): void {

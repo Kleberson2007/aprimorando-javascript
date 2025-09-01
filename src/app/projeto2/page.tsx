@@ -17,7 +17,7 @@ export default function Projeto2() {
     // Avisa e pergunta só uma vez
     if (!alerta) {
       alert('Número máximo alcançado');
-      const confirmar = confirm('Deseja realmente continuar aumentando o número? Se confirmar, tem que dar uma parte da sua alma pro criador do site cada vez que apertar o botão.');
+      const confirmar = confirm('Deseja realmente continuar aumentando o número? Se confirmar, tem que fazer um pix pro criador do site.');
       if (!confirmar) return;
       setAlerta(true);
     }

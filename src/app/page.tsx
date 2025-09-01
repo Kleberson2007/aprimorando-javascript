@@ -28,7 +28,7 @@ export default function Home() {
           <a className="projeto" id="">...</a>
           <a className="projeto" id="">...</a>
           <a className="projeto" id="">...</a>
-          <a className="projeto" id="numero" href={"/projeto0"}>...</a>
+          <a className="projeto" id="numero" >...</a>
         </div>
       </div>
     </div>

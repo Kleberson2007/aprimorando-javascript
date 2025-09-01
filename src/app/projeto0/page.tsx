@@ -1,8 +1,8 @@
 'use client';
-import "./projeto1.css";
+import "./projeto0.css";
 import React, { useState } from 'react';
 
-export default function projeto1(){
+export default function projeto0(){
     
 
     return (

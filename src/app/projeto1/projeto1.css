@@ -13,7 +13,13 @@ body, html {
   
 #contador {
     text-align: center;
-  
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
 }
   
   p {

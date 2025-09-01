@@ -3,18 +3,18 @@
     box-sizing: border-box;
 }
   
-body, html {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 200%;
+    height: 100vh;
+    width: 100vw;
 }
   
 #contador {
     text-align: center;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;

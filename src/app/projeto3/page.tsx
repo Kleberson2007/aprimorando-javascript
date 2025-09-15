@@ -18,16 +18,13 @@ export default function Projeto3(){
         }
       }
     }
-
-        useEffect(() => {
-          const fundo = document.getElementById("contador");
-          if (fundo) {
-            if (numero3 >= 10) {
-              fundo.style.backgroundColor = "yellow";
-            }
-          }
-        }, [numero3]);
-
+    function mudacor(){
+     if(numero3 >= 10){
+      document.body.style.transition = "background-color 0.5s ease";
+      document.body.style.backgroundColor = "gold"
+     }
+    }
+    mudacor()
     return (
       <div id="contador">
         <div id="status">

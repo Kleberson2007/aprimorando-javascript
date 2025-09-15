@@ -24,6 +24,16 @@ export default function Projeto3(){
       document.body.style.backgroundColor = "gold"
      }
     }
+    
+    // useEffect(() => {
+    //   const fundo = document.getElementById("contador");
+    //   if (fundo) {
+    //     if (numero3 >= 10) {
+    //       fundo.style.backgroundColor = "yellow";
+    //     }
+    //   }
+    // }, [numero3]); modo alternativo para a funçao
+
     mudacor()
     return (
       <div id="contador">

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="page">
       <div className="tittle">
-        <h1>Lista de mini projetos</h1> 
+        <h1>Lista de mini projetos que eu fiz</h1> 
       </div>
       <div id="projetos-area">
         <div id="projetos">

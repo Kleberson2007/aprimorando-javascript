@@ -1,6 +1,6 @@
 'use client';
 import "./projeto3.css";
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export default function Projeto3(){
     const [numero, setNumero] = useState(0)

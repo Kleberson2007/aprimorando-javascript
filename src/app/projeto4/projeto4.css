@@ -4,6 +4,15 @@
 }
   
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+  
+#contador {
+    text-align: center;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -22,4 +31,25 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+}
+
+#status {
+    display: flex;
+}
+
+#pontos, #resets, #ascenções {
+    padding: 30px;
+}
+
+button {
+    width: 450px;
+    height: 30px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 5rem;
 }
